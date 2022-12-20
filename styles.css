@@ -1,0 +1,68 @@
+/* Ensure proper sizing */
+* {box-sizing: border-box;}
+/* Column container */
+.row {
+margin-top: 8px;
+display: flex;
+flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+flex: 40%; /* Set the width of the sidebar */
+background-color: #f1f1f1; /* Grey background color */
+padding: 20px; /* Some padding */
+}
+/* Main column */
+.main {
+flex: 60%; /* Set the width of the main content */
+background-color: white; /* White background color */
+padding: 20px; /* Some padding */
+}
+
+#header {
+    padding: 15px; /* some padding */
+    text-align: center; /* center the text */
+    background: #2a6592; /* dark blue background */
+    color: white; /* white text color */
+    font-size: 50px;
+}
+/* Define the text color of the links */
+.nav-pills .nav-link {
+    color: #2a6592;
+    font-size: 20px;
+}
+/* Define the background color of the link when active */
+.nav-pills .nav-link.active {
+    background-color: #2a6592;
+}
+/* LinkedIn iconn seetings */
+#idLinkedInIcon {
+    background-color: rgb(0, 102, 170);
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font :bold 20px Arial, Helvetica, sans-serif;
+    height: 25px;
+    margin-top: 1px;
+    text-align: center;
+    width: 25px;
+}
+#idLinkedInIcon:hover{
+    background-color: #06d;
+}
+.fa-researchgate {
+    color: white;
+}
+.just_center {
+    text-align: center;
+}
+.just_justify {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 10px;
+}
+.list-group-item {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Make responsive website, width is adjusted based on the device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+        <script>
+            // Add simple JavaScript functions when mouse is hovering above image
+            function zoomImg(x) {
+            x.style.height = "432px";
+            x.style.width = "576px";
+            }
+            // when mouse is not hovering above image - return to normal
+            function normalImg(x) {
+            x.style.height = "200px";
+            x.style.width = "300px";
+            }
+        </script>
+
+        <title>Work experience</title>
+    </head>
+    <body>
+        <!--Header-->
+        <h1 id="header">Work experience</h1>
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-link nav-item" href="index.html">Home</a></li>
+            <a class="nav-link nav-item" href="edu.html">Education</a></li>
+            <a class="nav-link nav-item active" aria-current="page" href="work.html">Work experience</a></li>
+            <a class="nav-link nav-item" href="achieve.html">Certificates</a></li>
+            <a class="nav-link nav-item" href="tech.html">Technical skills</a></li>
+        </nav>
+
+        <div class="row">
+            <div class="side">
+                <h2 class="just_center"><i class="fa-solid fa-person-chalkboard"></i></h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>2019 - present</td><td>Technical associate - University of Belgrade, Faculty of mechanical engineering</td>
+                        </tr>
+                        <tr>
+                            <td>06/2022 - 10/2022</td><td>Data Scientist - <a href="https://argenit.com/en/home/">Argenit Teknoloji</a>, Istanbul, Turkey</td>
+                        </tr>
+                        <tr>
+                            <td>09/2019 - 10/2022</td>
+                            <td>Teaching associate on courses:
+                                <ul class="list-group">
+                                    <li class="list-group-item">Computer simulation and artificial intelligence, B.Sc.</li>
+                                    <li class="list-group-item">Intelligent Technology Systems, M.Sc.</li>
+                                    <li class="list-group-item">Machine Learning of Intelligent Robotic Systems, M.Sc.</li>
+                                    <li class="list-group-item">Robotics and Artificial Intelligence, M.Sc.</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2014-2016</td><td>Assistant of licensed bankruptcy trustee</td>
+                        </tr>
+                        <tr>
+                            <td>2012-2019</td><td>Part time jobs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="main">
+                <article>
+                    <article>
+                        <h3>Technical associate</h2>
+                            <p class="just_justify">During my first year of PhD studies I was elected to the research title of technical associate by Faculty of Mechanical Enginnering,
+                            and I am the member of ROBOTICS & AI Laboratory.
+                            In 2022 I was chosen as a representative of Faculty of Mechanical Engineering to attend training for the use of the
+                            <a href="https://www.ai.gov.rs/tekst/189/nacionalna-ai-platforma.php">National AI platform of the Republic of Serbia</a>,
+                            where I obtained Nvidia DLI Certificates as well knowledge to work on AI platform.
+                            </p>
+                        <h3>Data Scientist at Argenit Teknoloji</h2>
+                        <p class="just_justify">I had the opportunity of working in a multinational environment for 5 months as a data scientist at Argenit Teknoloji in Instanbul.
+                        I was there as a part of the <a href="http://autoigg.bio.bg.ac.rs/">AUTOIGG</a> project research team and worked on developing a machine learning methodology
+                        for the analysis of time-series data obtained from images acquired by automated fluorescence microscopy. Some of the work activities included:
+                            <ul class="list-group" style="margin-left: 40px; margin-bottom: 1em">
+                                <li>Time series analysis including visualization, augmentation, and normalization of raw data.</li>
+                                <li>Development of supervised and unsupervised machine learning algorithms for time series classification, clustering, and anomaly detection.</li>
+                            </ul>
+                        Also, I participated in the AUTOIGG workshop at Sile, Istanbul, where I presented the results of my work to colleagues from different fields of research such as Medicine and Biology.<br>
+                        <div class="text-center">
+                            <img onmouseover="zoomImg(this)" src="AUTOIGGworkshop.jpg" onmouseout="normalImg(this)" alt="Presenting at workshop" class="rounded center" width="300" height="200">
+                        </div>
+                        </p>
+                        <h3></h2>
+                        <p class="just_justify"></p>
+                        </article>
+                </article>
+            </div>
+        </div>
+
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #2a6592; color: white">© 2022 Copyright: Lazar Djokic</div>
+        </footer>
+    </body>
+</html>
